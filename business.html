@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Small Business</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.home {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.home h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: white;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.about, .services, .contact {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.service-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Small Business</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-text">
+            <h2>Welcome to My Small Business!</h2>
+            <p>Your trusted partner for high-quality services.</p>
+            <a href="#services" class="cta-btn">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a passionate small business dedicated to providing top-notch products and services to our community. With years of experience, we are here to help you achieve your goals and meet your needs.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Service 1</h3>
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220627181517/Export-import-poster.png" alt="Product Image" width="200px" height="300 px">
+        </div>
+        <div class="service-card">
+            <h3>Service 2</h3>
+            <img src="https://th.bing.com/th/id/OIP.AA71m0vdvR3O-Ujk09XLMgHaF7?rs=1&pid=ImgDetMain" alt="Product Image">
+        </div>
+        <div class="service-card">
+            <h3>Service 3</h3>
+            <img src="https://static.vecteezy.com/system/resources/previews/018/982/059/non_2x/a-man-finishes-work-on-deadline-illustration-of-an-active-man-working-on-a-laptop-freelance-illustration-free-png.png" alt="Product Image"width="200px">
+
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Feel free to reach out to us. We'd love to hear from you!</p>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Small Business. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
